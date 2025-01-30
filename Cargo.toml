@@ -1,6 +1,6 @@
 [package]
-name = "recorder"
-version = "0.1.0"
+name = "Rust_Capture"
+version = "1.5.0"
 edition = "2021"  # Use the latest edition of Rust
 
 [dependencies]
