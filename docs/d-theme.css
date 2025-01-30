@@ -1,0 +1,50 @@
+/* Dark Blue Theme for Rust Capture */
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #64B5F6;
+}
+
+p, li {
+    color: #E0E0E0;
+}
+
+code {
+    background: #1E1E1E;
+    color: #64B5F6;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+pre {
+    background: #1E1E1E;
+    color: #E0E0E0;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: monospace;
+}
+
+ul {
+    list-style-type: square;
+}
+
+strong {
+    color: #42A5F5;
+}
+
+a {
+    color: #03A9F4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
