@@ -16,7 +16,7 @@ To use this tool, ensure the following dependencies are installed:
 
 - **`cargo run -- screencast`** → Starts screen recording.
 - **`cargo run -- video`** → Same as screencast (full-screen recording).
-- **`cargo run -- "video selected"`** → Lets you select an area to record.
+- **`cargo run -- "video selected"`** → Lets you select an area to record or a specific window.
 - **`cargo run -- audio`** → Records audio only.
 - **`cargo run -- webcam`** → Records webcam video.
 - **`cargo run -- "webcam (hi-def)"`** → Records webcam in 1080p.
