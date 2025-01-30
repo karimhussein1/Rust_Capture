@@ -1,0 +1,9 @@
+[package]
+name = "recorder"
+version = "0.1.0"
+edition = "2021"  # Use the latest edition of Rust
+
+[dependencies]
+anyhow = "1.0"    # For error handling
+chrono = "0.4"    # For timestamp formatting
+nix = "0.26"      # For process signaling

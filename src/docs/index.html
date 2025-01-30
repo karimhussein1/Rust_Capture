@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust Capture</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        h1, h2 { color: #333; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 4px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 4px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Rust Capture</h1>
+
+    <h2>Overview</h2>
+    <p>Rust Capture is a lightweight, fast, and efficient screen, audio, and webcam recording tool written in Rust. It leverages <code>ffmpeg</code>, <code>xdpyinfo</code>, and <code>slop</code> to provide seamless recording capabilities for Linux users.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li><strong>Full-Screen Recording:</strong> Capture your entire screen effortlessly.</li>
+        <li><strong>Selected Area Recording:</strong> Record a specific region of your screen using slop.</li>
+        <li><strong>Audio-Only Recording:</strong> Capture high-quality audio using PulseAudio.</li>
+        <li><strong>Webcam Recording:</strong> Record from your webcam with optional high-definition settings.</li>
+        <li><strong>Minimal UI with dmenu:</strong> Easily select recording modes via dmenu.</li>
+        <li><strong>Automatic File Naming:</strong> Saves recordings with timestamped filenames.</li>
+        <li><strong>Process Management:</strong> Automatically tracks and manages recording processes.</li>
+    </ul>
+
+    <h2>Dependencies</h2>
+    <p>To use this tool, ensure the following dependencies are installed:</p>
+    <ul>
+        <li>Rust & Cargo: Required for compiling and running the project.</li>
+        <li>FFmpeg: Handles video and audio encoding.</li>
+        <li>xdpyinfo: Retrieves screen resolution.</li>
+        <li>slop: Allows region selection for recording.</li>
+        <li>dmenu: Provides an interactive recording mode selection.</li>
+        <li>PulseAudio: Used for audio capture.</li>
+    </ul>
+
+    <h2>Installation</h2>
+    <p>To install and run the tool, follow these steps:</p>
+    <pre><code>git clone https://github.com/yourusername/rust-capture-suite.git
+cd rust-capture-suite
+cargo build --release
+./target/release/rust-capture-suite</code></pre>
+
+    <p>Alternatively, you can specify a mode directly:</p>
+    <pre><code>./target/release/rust-capture-suite screencast
+./target/release/rust-capture-suite audio
+./target/release/rust-capture-suite webcam</code></pre>
+
+    <h2>Use Cases</h2>
+    <ul>
+        <li><strong>Screen Recording for Tutorials:</strong> Ideal for creating educational videos and presentations.</li>
+        <li><strong>Game Streaming & Recording:</strong> Capture gameplay footage with minimal performance overhead.</li>
+        <li><strong>Meeting & Lecture Recording:</strong> Save important discussions for later review.</li>
+        <li><strong>Podcast & Music Recording:</strong> High-quality audio capture for content creation.</li>
+    </ul>
+
+    <h2>How Arguments Work</h2>
+    <pre><code>cargo run -- screencast        # Starts screen recording
+cargo run -- video            # Same as screencast (full-screen recording)
+cargo run -- "video selected" # Lets you select an area to record
+cargo run -- audio            # Records audio only
+cargo run -- webcam           # Records webcam video
+cargo run -- "webcam (hi-def)" # Records webcam in 1080p
+cargo run -- kill             # Stops the active recording</code></pre>
+
+    <h2>Why Choose Rust Capture?</h2>
+    <ul>
+        <li><strong>Fast & Efficient:</strong> Written in Rust, ensuring performance and low resource usage.</li>
+        <li><strong>Minimal Dependencies:</strong> Uses existing system tools without unnecessary bloat.</li>
+        <li><strong>Flexible & Customizable:</strong> Choose between full-screen, area selection, or webcam recording.</li>
+        <li><strong>Open Source:</strong> Free to use, modify, and contribute to!</li>
+    </ul>
+
+    <h2>Contribute</h2>
+    <p>We welcome contributions! Feel free to fork the repository, submit issues, and create pull requests to improve the project.</p>
+
+    <p>Start recording today with Rust Capture and experience fast, efficient, and reliable media capture!</p>
+</body>
+</html>
